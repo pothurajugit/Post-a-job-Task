@@ -1,0 +1,100 @@
+
+<div style="background-color: #f0f2f4; ">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(26, 24, 24);">
+      <a class="navbar-brand" routerLink="/home"><img src="../assets/images/logo.png" alt="osos" class="img-fluid img-thumbnail" width="25%"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="responsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+            <a class="nav-link text-white font-weight-bold" routerLink="/home"><button class="btn font-weight-bold text-white" style="background-image: linear-gradient(to left, rgba(241, 28, 28, 0), rgba(255,0,0,1));">HOME</button></a>
+          </li>
+          <li class="nav-item" >
+            <a class="nav-link text-white font-weight-bold" routerLink="/joblist"><button class="btn font-weight-bold text-white" style="background-image: linear-gradient(to left, rgba(241, 28, 28, 0), rgba(255,0,0,1));">JOBS LIST</button></a>
+          </li> 
+        </ul>
+      </div>  
+    </nav>
+    <!-- Navbar end -->
+    
+      <div class="container-fluid p-0 m-0" >
+
+          <!-- Post a job area  form start -->
+          <div class="container-fluid">
+            <div class="row pt-5">
+              <div class="col-sm-7">
+                <img src="../../assets//images/hiring.jpg" alt="" width="100%" class="img-fluid img-thumbnail">
+              </div>
+              <div class="col-sm-5">
+                <div class="card shadow-lg bg-secondary rounded">
+                  <div class="card-header">
+                    <h3 class="text-center text-white">POST A JOB</h3>
+                  </div>
+                  <div class="card-body">
+                    <form class="p-0 m-0"  #ref="ngForm" (ngSubmit)="sendData(ref.value); ref.reset()">
+                      <div class="form-group row">
+                        <label for="jobtitle" class="col-sm-4 font-weight-bold text-white">JOB TITLE : </label>
+                        <div class="col-sm-7">
+                          <input type="text" name="title" id="jobtitle" class="form-control form-control-sm" ngModel>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="sal" class="col-sm-4 font-weight-bold text-white">SALARY : </label>
+                        <div class="col-sm-7">
+                          <input type="text" name="salary" id="sal" class="form-control form-control-sm" ngModel>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="des" class="col-sm-4 font-weight-bold text-white">DESCRIPTION : </label>
+                        <div class="col-sm-7">
+                          <textarea name="description" id="des" cols="36"  rows="6"  ngModel></textarea>
+                        </div>
+                      </div>
+                      <button class="btn btn-danger rounded-0 font-weight-bold btn-block" type="submit">ADD</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="col-sm-3"></div> -->
+            </div>
+          </div>
+          <!-- Post a job area form  end -->
+
+        <div class="container">
+          <!-- Information area start -->
+          <div class="row" style="padding-top: 150px; padding-bottom: 80px;">
+            <div class="col-sm-3">
+              <div class="card">
+                <img src="../../assets//images/java.png" alt="java" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <img src="../../assets/images/angular.jpg" alt="angular" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <img src="../../assets/images/react.jpg" alt="react" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card">
+                <img src="../../assets/images/devops.png" alt="devops" class="img-fluid img-thumbnail">
+              </div>
+            </div>
+          </div>
+          <!-- Information area end -->
+
+        </div>
+    
+        <!-- Footer -->
+        <div style="padding-top: 60px;">
+          <footer class="py-1 text-center" style="background-color: #9676a1; color: white;">
+            <p>All rights 	&#169; osos 2020 Reserved</p>
+          </footer>
+        </div>
+      </div>
+    </div>

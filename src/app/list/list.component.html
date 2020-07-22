@@ -1,0 +1,53 @@
+<div style="background-color: #f0f2f4;">
+    <!-- Navbar start -->
+    <nav class="navbar navbar-expand-md navbar-dark" style="background-color: rgb(26, 24, 24);">
+      <a class="navbar-brand" routerLink="/home"><img src="../assets/images/logo.png" alt="osos" class="img-fluid img-thumbnail" width="25%"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" id="responsive">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+            <a class="nav-link text-white font-weight-bold text-right" routerLink="/postajob"><img src="../../assets/images/plus.png" alt="plus-icon" width="18%"> </a>
+          </li> 
+        </ul>
+      </div>  
+    </nav>
+    <!-- Navbar end -->
+
+    <marquee behavior="" direction="" class="py-4">
+      <h5 style="color: blueviolet;">We are hiring <span style="color: red;">Java Devloper</span>,  <span style="color: chocolate;">Mean Stack Developer</span>, <span style="color: green;">Nodejs Developer</span>, <span style="color: rgb(243, 209, 14);">Devops Developer</span>, Ui Developer, <span style="color: black;">Mern Stack Developer     </span></h5>
+    </marquee>
+    
+    <!-- Jobs data start -->
+    <div class="container-fluid p-0 m-0">
+      <div class="container pt-5">
+        <div class="row">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6">
+            <div class="card mb-4 text-center"  *ngFor="let data of posteddata" style="background-color: rgb(240, 236, 232);">
+              <div class="card-body">
+                <div class="card-text">
+                  <ul style="list-style-type: none; font-size: 20px;">
+                   <li class="py-1 font-weight-bold">{{data.title}}</li>
+                   <li class="py-1" style="font-weight: 400;">{{data.salary}}</li>
+                  <li class="py-1">{{data.description}}</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Jobs data start -->
+
+
+            <!-- Footer -->
+            <div style="margin-top: 397px;">
+              <footer class="py-1 text-center" style="background-color: #9676a1; color: white;">
+                <p>All rights 	&#169; osos 2020 Reserved</p>
+              </footer>
+            </div>
+    </div>

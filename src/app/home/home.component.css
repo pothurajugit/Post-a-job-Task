@@ -1,0 +1,48 @@
+.circle1{
+    padding: 1px;
+    margin: 0 auto;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    color: #fff;
+}
+.circle2{
+    padding: 1px;
+    margin: 0 auto;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #673ab7;
+    border-radius: 50%;
+    color: #fff;
+}
+.circle3{
+    padding: 1px;
+    margin: 0 auto;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #78c85a;
+    border-radius: 50%;
+    color: #fff;
+}
+
+#size{
+    font-size: 50px; 
+    letter-spacing: 3px; 
+    font-weight: bold;
+}
+
+/* responsive ness */
+@media  only screen and (max-width:700px){
+    #size{
+        font-size: 26px;
+    }
+    #responsive{
+            margin-left: auto;
+            margin-top: -48px;
+            background-color: rgb(26, 48, 48);
+    }
+}
